@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dupaudio"
+version = "0.1.0"
+description = "Find and safely delete duplicate audio files on Windows and macOS"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+    "PySide6>=6.6",
+    "mutagen>=1.47",
+    "Send2Trash>=1.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pyinstaller>=6.3",
+    "pillow>=10.0",  # generates the Windows .ico from the master icon
+]
+
+[project.gui-scripts]
+dupaudio = "dupaudio.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+dupaudio = ["assets/*.png", "assets/*.icns", "assets/*.ico", "assets/*.mp4", "assets/*.gif"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

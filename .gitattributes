@@ -1,0 +1,18 @@
+# Normalize line endings so files behave on both macOS and Windows.
+# Text files use LF in the repo; Windows batch/PowerShell scripts MUST be CRLF
+# (this permanently fixes the "'Build' is not recognized" batch error).
+* text=auto eol=lf
+
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+*.ps1  text eol=crlf
+
+# Binary assets — never touch line endings.
+*.png   binary
+*.ico   binary
+*.icns  binary
+*.mp4   binary
+*.gif   binary
+*.dmg   binary
+*.jpg   binary
+*.jpeg  binary
