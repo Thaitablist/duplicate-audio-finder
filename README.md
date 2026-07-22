@@ -10,6 +10,10 @@
 
 <br>
 
+**English** · [ไทย 🇹🇭](README.th.md)
+
+<br>
+
 [![Release](https://img.shields.io/github/v/release/Thaitablist/duplicate-audio-finder?style=for-the-badge&color=00E5FF)](https://github.com/Thaitablist/duplicate-audio-finder/releases/latest)
 [![Build](https://img.shields.io/github/actions/workflow/status/Thaitablist/duplicate-audio-finder/build.yml?style=for-the-badge)](https://github.com/Thaitablist/duplicate-audio-finder/actions)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Windows-7C4DFF?style=for-the-badge)](#-download)
